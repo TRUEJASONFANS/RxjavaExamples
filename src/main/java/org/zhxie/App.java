@@ -2,6 +2,7 @@ package org.zhxie;
 
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
+import io.reactivex.subjects.CompletableSubject;
 import io.reactivex.subjects.PublishSubject;
 import org.reactivestreams.Subscription;
 
@@ -11,6 +12,8 @@ import org.reactivestreams.Subscription;
  */
 public class App 
 {
+    CompletableSubject done = CompletableSubject.create();
+
     public static void main( String[] args )
     {
         PublishSubject<String> stringPublishSubject = PublishSubject.create();
