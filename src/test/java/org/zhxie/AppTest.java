@@ -1,20 +1,14 @@
 package org.zhxie;
 
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+public class AppTest {
+
+    public static void main(String[] args) {
+        Map<String, String> map = new HashMap<>();
     }
 }

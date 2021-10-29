@@ -16,15 +16,19 @@ public class CompletableDemo {
 
                     @Override
                     public void onError(Throwable e) {
-                        e.printStackTrace();
+                      e.printStackTrace();
                     }
                 });
 
-        Completable.fromRunnable(() -> {System.out.println("Completed instant");}).subscribe(
-                ()-> {
-                    System.out.println("Completed received");
-                }
-        );
+      Completable.fromRunnable(() -> {
+        System.out.println("Completed instant");
+      }).subscribe(
+          () -> {
+            System.out.println("Completed received");
+          }
+      );
+
+//      Completable.fromRunnable();
 
     }
 }
